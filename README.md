@@ -446,6 +446,38 @@ controls in PyCharm more convenient for adding
 several files without accidentally adding things
 that should not be in the repo.  
 
+![Pycharm git tools](img/pycharm-git-commands.png)
+
+![Select the codebase, omit the cruft](img/select-files-to-commit.png)
+
+
+## Let it rip! 
+
+Our app will be built when we push it to Heroku. 
+
+```
+(env) Sparrowhawk:tinier-web-app michal$ git push heroku main
+```
+
+Heroku will print several progress report messages, 
+then 
+
+```
+remote:        Released v3
+remote:        https://tiny-demo-app.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/tiny-demo-app.git
+ * [new branch]      main -> main
+```
+
+If we click the link on the line that says 
+"deployed to Heroku", we can see that it worked,
+or else receive an error message about the app
+crashing. 
+
+
+
 
 
 
